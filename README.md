@@ -29,25 +29,3 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-
-## Updates
-
-1. app.components.ts: added string type to the title
-export class AppComponent {
-  title: string = 'whois-query-client';
-}
-
-2. added display-data.component 
-
-3. changed data (received domain data) type to be an array
-display-data.component.ts
-  export class DisplayDataComponent implements OnInit {
-  @Input() data: [];
-  constructor() { }
-  ngOnInit(): void {
-  }
-}
-query.component.ts
-  data: [];
-
-<!-- 4. updated styling on mobile devices -->
