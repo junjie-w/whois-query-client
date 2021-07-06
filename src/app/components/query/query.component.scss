@@ -1,0 +1,58 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 70vw;
+  max-width: 500px;
+  margin: 100px auto 50px auto;
+
+  label {
+    font-size: 15px;
+  }
+
+  .btn {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 15px;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:active {
+      transform: scale(0.98);
+    }
+  }
+
+  .invalidInputButton {
+    background-color: grey;
+    cursor: not-allowed;
+  }
+
+  input {
+    height: 40px;
+    padding: 3px 7px;
+    font-size: 15px;
+    font-family: inherit;
+  }
+}
+
+.form * {
+  margin: 5px 0;
+}
+
+.errorMsg {
+  color: red;
+}
+
+.domainData {
+  margin-bottom: 100px;
+
+  p {
+    margin: 10px 0;
+  }
+}

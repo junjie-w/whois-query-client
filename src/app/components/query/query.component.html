@@ -1,0 +1,13 @@
+<!-- <form class="form" action="" (ngSubmit)="onSubmit()"> -->
+<form class="form" (ngSubmit)="onSubmit()">
+  <label for="text">WHOIS QUERY</label>
+  <input type="text" name="text" id="text" [(ngModel)]="text" placeholder="Enter a domain name">
+  <p *ngIf="showErrorMsg" class="errorMsg"><i>Please enter a valid domain name.</i></p>
+  <input type="submit" value="Submit" [ngClass]="{'btn': true, 'invalidInputButton': invalidInputButton}">
+</form>
+
+<!-- <div class="domainData">
+  <p *ngFor="let line of data">{{line}}</p>
+</div> -->
+
+<app-display-data [data]="data"></app-display-data>
